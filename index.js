@@ -2,8 +2,6 @@ let number = prompt ('Please enter three numbers separated by commas.');
 
 let numberRef =[...number];
 
-number.split(',');
-
 let first = number[0];
 
 let midlle = number[1];
