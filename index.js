@@ -1,10 +1,12 @@
 let number = prompt ('Please enter three numbers separated by commas.');
 
-let numberRef =[...number];
+number.split(',');
+
+console.log(number);
 
 let first = number[0];
 
-let midlle = number[1];
+let midlle = number[2];
 
 let last = number[number.length - 1];
 
@@ -17,18 +19,18 @@ alert(`Пользователь ввел ${first} + ${midlle} + ${last} и по�
 let min;
 let max;
 
-if (numberRef[0] > numberRef[1] && numberRef[0] > numberRef[2]) {
-    max = numberRef[0];
-} else if (numberRef[1] > numberRef[0] && numberRef[1] > numberRef[2]) {
-    max = numberRef[1];
-} else (numberRef[2] > numberRef[0] && numberRef[2] > numberRef[1]); {
-    max = numberRef[2];
+if (number[0] > number[2] && number[0] > number[4]) {
+    max = number[0];
+} else if (number[2] > number[0] && number[2] > number[4]) {
+    max = number[2];
+} else (number[4] > number[0] && number[4] > number[2]); {
+    max = number[4];
 }
 
-if (numberRef[0] < numberRef[1] && numberRef[0] < numberRef[2]) {
-    min = numberRef[0];
-} else if (numberRef[1] < numberRef[0] && numberRef[1] < numberRef[2]) {
-    min = numberRef[1];
+if (number[0] < number[2] && number[0] < number[4]) {
+    min = number[0];
+} else if (number[2] < number[0] && number[2] < number[4]) {
+    min = number[2];
 }
 
 alert(`min is ${min}, max is ${max}`);
